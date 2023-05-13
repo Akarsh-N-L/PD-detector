@@ -722,8 +722,8 @@ ul{
     background-color: #122853;
     color: #ffffff;
     border-radius: 4px;
-    max-width: 120px;
-    width: 100%;
+    max-width: 100px;
+    width: 80%;
     border: none;
     outline: none;
     cursor: pointer;
@@ -731,6 +731,7 @@ ul{
     font-weight: 500;
     letter-spacing: 0.4px;
 }
+
 /*==footer================================*/
 footer{
     width: 100%;
