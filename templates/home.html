@@ -155,9 +155,10 @@
     <section id="subscribe">
         <h3>This prediction is based on voice frequencies.</h3>
         <!--subcribe-box-->
-        <form class="subscribe-box">
-            <input type="text" placeholder="Frequencies">
-            <button>Test</button>
+        <form class="subscribe-box" action="result">
+            {% csrf_token %}
+            <input type="text" placeholder="Frequencies" name="input">
+            <button type="submit">Test</button>
         </form>
     </section>
 
