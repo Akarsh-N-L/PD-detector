@@ -29,13 +29,14 @@
                 <span class="nav-icon"></span>
             </label>
             <!--**logo*********-->
-            <a href="index.html" class="logo"><span>PD</span>Predictor</a>
+            <a href="/" class="logo"><span>PD</span>Predictor</a>
             <!--**menu*********-->
             <ul class="menu">
                 <li><a href="#our-team">Find A Doctor</a></li>
                 <li><a href="#predictor">Predictor</a></li>
-                <li><a href="#testimonials">Contact Us</a></li>
+                <li><a href="#why-choose-us">Contact Us</a></li>
             </ul>
+            <a href="/appointment" class="nav-appointment-btn">Appointment</a>
         </nav><!--nav-end-->
 
 
@@ -48,7 +49,7 @@
                 <!--btns-->
                 <div class="hero-text-btns">
                     <a href="#our-team"><i class="fa-solid fa-magnifying-glass"></i> Find Doctors</a>
-                    <a href="#"><i class="fa-solid fa-check"></i> Predictor</a>
+                    <a href="#predictor"><i class="fa-solid fa-check"></i> Predictor</a>
                 </div>
             </div>
             <!--**img*****************-->
@@ -157,7 +158,7 @@
         <!--subcribe-box-->
         <form class="subscribe-box" action="result">
             {% csrf_token %}
-            <input type="text" placeholder="Frequencies" name="input">
+            <input type="text" placeholder="Frequencies" name="input" required>
             <button type="submit">Test</button>
         </form>
     </section>
@@ -217,7 +218,7 @@
                 </div>
             </div>
             <!--==btn========-->
-            <a href="#" class="why-choose-us-btn">Make Appointment</a>
+            <a href="/appointment" class="why-choose-us-btn">Make Appointment</a>
         </div><!--left-end-->
 
         <!--**right*******************-->
@@ -257,7 +258,6 @@
         <!--**heading*****************-->
         <div class="our-team-heading">
             <h3>Meet Our Specialist</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
 
         <!--**team-container***********-->
@@ -275,8 +275,8 @@
                         </div>
                         <!--text-->
                         <div class="team-text">
-                            <strong>Dr. Paradox Alex</strong>
-                            <span>Skin Specialist</span>
+                            <strong>Dr. Jonny</strong>
+                            <span>Neuro Surgeon</span>
                         </div>
                     </div>
                 </div><!--end-slide-->
@@ -291,7 +291,7 @@
                         <!--text-->
                         <div class="team-text">
                             <strong>Dr. Paradox Alex</strong>
-                            <span>Skin Specialist</span>
+                            <span>Neuro Surgeon</span>
                         </div>
                     </div>
                 </div><!--end-slide-->
@@ -305,8 +305,8 @@
                         </div>
                         <!--text-->
                         <div class="team-text">
-                            <strong>Dr. Paradox Alex</strong>
-                            <span>Skin Specialist</span>
+                            <strong>Dr. Ross Taylor</strong>
+                            <span>Neuro Surgeon</span>
                         </div>
                     </div>
                 </div><!--end-slide-->
@@ -320,8 +320,8 @@
                         </div>
                         <!--text-->
                         <div class="team-text">
-                            <strong>Dr. Paradox Alex</strong>
-                            <span>Skin Specialist</span>
+                            <strong>Dr. Lena Paul</strong>
+                            <span>Neural Specialist</span>
                         </div>
                     </div>
                 </div><!--end-slide-->
@@ -335,17 +335,14 @@
                         </div>
                         <!--text-->
                         <div class="team-text">
-                            <strong>Dr. Paradox Alex</strong>
-                            <span>Skin Specialist</span>
+                            <strong>Dr. Leha Gotti</strong>
+                            <span>Neural Specialist</span>
                         </div>
                     </div>
                 </div><!--end-slide-->
             </div><!--wrapper-end-->
             <div class="swiper-pagination"></div>
             </div><!--swiper-end-->
-
-            
-        
         </div>
 
     </section><!--team-end-->

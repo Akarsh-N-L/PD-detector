@@ -1,12 +1,132 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--==Font-Awesome-for-icons=====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
-    Frequencies: {{freqs}}
+    <!-- <section id="hero"> -->
+        <!--==navigation====================-->
+        <nav class="navigation">
+            <!--**menu-btn*****-->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <!--**logo*********-->
+            <a href="index.html" class="logo"><span>PD</span>Predictor</a>
+            <!--**menu*********-->
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/appointment">Appointment</a></li>
+            </ul>
+        </nav><!--nav-end-->
+        
+    <!-- </section> -->
+
+    {% if ans == "1" %}
+        <div class="result-sec" style="width:100%;background:#ff3d50;color:white;margin-top:20px;margin-bottom:20px;padding:35px;">
+            <h2>Result:  The Patient is effected with Parkinson's Disease. It is recommended to consult a doctor as soon as possible.</h2>
+        </div>
+    {% else %}
+        <div class="result-sec" style="width:100%;background:#157347;color:white;margin-top:20px;margin-bottom:20px;padding:35px;">
+            <h2>Result:  The Patient is not effected with Parkinson's Disease.</h2>
+        </div>
+    {% endif %}
+
+
+    <section id="why-choose-us">
+
+        <!--**left*****************-->
+        <div class="why-choose-us-left">
+            <h3>Why Choose Us?</h3>
+            <!--==container====-->
+            <div class="why-choose-box-container">
+                <!--**box**-->
+                <div class="why-choose-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-check"></i>
+                    <!--text-->
+                    <div class="why-choose-box-text">
+                        <strong>Advance Care</strong>
+                        <p>Highly accurate predictions</p>
+                    </div>
+                </div>
+                <!--**box**-->
+                <div class="why-choose-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-check"></i>
+                    <!--text-->
+                    <div class="why-choose-box-text">
+                        <strong>24*7</strong>
+                        <p>The service is available all the time</p>
+                    </div>
+                </div>
+                <!--**box**-->
+                <div class="why-choose-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-check"></i>
+                    <!--text-->
+                    <div class="why-choose-box-text">
+                        <strong>Easy to use</strong>
+                        <p>No complex stuff</p>
+                    </div>
+                </div>
+                <!--**box**-->
+                <div class="why-choose-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-check"></i>
+                    <!--text-->
+                    <div class="why-choose-box-text">
+                        <strong>Free tool</strong>
+                        <p>We do not charge for these services</p>
+                    </div>
+                </div>
+            </div>
+            <!--==btn========-->
+            <a href="/appointment" class="why-choose-us-btn">Make Appointment</a>
+        </div><!--left-end-->
+
+        <!--**right*******************-->
+        <div class="why-choose-us-right">
+            <h3>Contact Us</h3>
+            <p>If face any issues, bugs or any other problems. <br>Please contact us using the phone number or the email mentioned below, we are happy to help. </p>
+            <!--==container====-->
+            <div class="w-right-contact-container">
+                <!--**box**-->
+                <div class="w-right-contact-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <!--text-->
+                    <div class="w-right-contact-box-text">
+                        <span>Call Us Now</span>
+                        <strong>+123 4567 89</strong>
+                    </div>
+                </div>
+                <!--**box**-->
+                <div class="w-right-contact-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <!--text-->
+                    <div class="w-right-contact-box-text">
+                        <span>Mail Us</span>
+                        <strong>contact@example.com</strong>
+                    </div>
+                </div>
+            </div>
+        </div><!--right-end-->
+
+    </section><!--end-->
+   
 </body>
 </html>
